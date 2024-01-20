@@ -130,6 +130,7 @@
         transform: translate(16vw);
         gap:40vw;
         padding-left: 10vw;
+        padding-right: 40vw;
     }
     .benefit-image-container{
         width: 46.5vw;
