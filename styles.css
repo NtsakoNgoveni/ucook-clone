@@ -1,0 +1,127 @@
+body{
+    background-color: #F5F5F5;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+/*NAVBAR */
+.container{
+    display: flex;
+    justify-content: flex-end;
+}
+nav{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 0px 2vw;
+    width: 100vw;
+    height:4.44vw;
+    max-height:64px;
+    box-sizing: border-box;
+    box-shadow: rgba(120, 120, 120, 0.1) 0px 0px 0.5vw;
+    margin: 0;
+}
+
+nav ul{
+    list-style:  none;
+    display: flex;
+    height: 100%;
+    margin:0;
+    padding: 0;
+    align-items: center;
+    gap:1.2rem;
+    font-size: 0.7rem;
+}
+
+.border-right{
+    border-right: 1px solid #F1F1EE ;
+    padding-right: 10px;
+}
+.signup-btn{
+    background-color: rgb(232, 117, 67);
+    border: 2px solid rgb(232, 117, 67);
+    color: white;
+    font-weight: bold;
+    padding:0.64rem 1rem;
+    border-radius:5px;
+    font-size:0.86rem;
+    margin-left:0.4rem;
+}
+.border-right > a:link{
+    color:rgb(232, 117, 67);
+    font-weight: bold;
+    font-size:0.86rem;
+}
+.cart-section{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+}
+.cart-icon{
+    height: 1.4rem;
+    width: 2.3rem;
+    padding:0;
+}
+.cart-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color:white;
+    padding:0px;
+    height:1.4rem;
+    width:1.2rem;
+    border-radius: 5px;
+}
+.icon-container{
+    margin-right: 1.5rem;
+}
+
+/*SMaller Screen styling */
+.display-none{
+    display: none;
+}
+@media(max-width: 1160px) {
+
+    .display-none-large{
+        display: unset;
+    }
+    .display-none-sm{
+        display: none;
+    }
+    nav{
+        height: 7.292vw;
+    }
+    .icon-container{
+        display: flex;
+        align-items: center;
+    }
+    nav svg{
+        width: 3.08vw;
+    }
+}
+@media(max-width:760px) {
+    nav{
+        box-shadow: rgba(17, 17, 17, 0.15) 0px 0.25vw 4vw;
+        height: 20.5vw;
+    }
+    nav svg{
+        font-weight: bold;
+        width:7vw;
+    }
+}
+
+/*HERO section */

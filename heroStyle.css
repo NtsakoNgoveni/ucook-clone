@@ -1,0 +1,110 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(236, 236, 236);
+    padding: 0 6.667vw;
+    padding-bottom: 3vw;
+}
+.hero-text{
+    padding: 0 2vw;
+    font-size: 1.2vw;
+    text-align: left;
+}
+.hero-text button{
+    background-color: #4FA970;
+    color: white;
+    border: 1px solid #4FA970;
+    padding: 0.9vw;
+    border-radius: 5px;
+    font-weight: 900;
+}
+.hero-text > * {
+    margin: 1vw 0;
+}
+.hero h1{
+    margin: 0.8vw 0;
+}
+.hero-image-container{
+    width: 100%;
+    height: 100%;
+}
+.hero-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Smaller screen*/
+@media(max-width:1020px){
+    .hero{
+        padding: 5.208vw 4.167vw;
+    }
+    .hero-text{
+        color: rgb(41, 41, 41);
+    }
+    .hero-text h1{
+        font-size: 3.646vw;
+        line-height: 5.729vw;
+        text-align: center;
+
+    }
+    .hero-text h3{
+        font-size: 2.344vw;
+        line-height: 3.646vw;
+    }
+    .hero-text p{
+        font-size: 1.563vw;
+        line-height: 3.125vw;
+    }
+    .hero-text button{
+        line-height: 1.823vw;
+        font-size: 1.302vw;
+        color: rgb(79, 169, 112);
+        background-color: rgba(255, 255, 255, 0);
+        border-color: rgb(79, 169, 112);
+
+    }
+    .hero-image-container{
+        height: 39.063vw;
+        overflow: hidden;
+    }
+}
+
+@media(max-width: 760px){
+    .hero{
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero-image-container{
+        height: 60.375vw;
+        margin-bottom: 3vw;
+    }
+    .hero-text{
+        text-align: center;
+    }
+    .hero-text h1{
+        font-size: 8.75vw;
+        line-height: 13.75vw;
+    }
+    .hero-text > h3{
+        font-size: 5.625vw;
+        line-height: 8.75vw
+    }
+    .hero-text p{
+        font-size: 3.75vw;
+        line-height: 7.5vw;
+    }
+    .hero-text> button{
+        font-weight: 900;
+        font-size: 3.125vw;
+        line-height: 4.375vw;
+        font-weight: 900;
+        width: fit-content;
+        height: 10vw;
+        border-width: 0.625vw;
+        margin-bottom: 8vw;
+    }
+}
